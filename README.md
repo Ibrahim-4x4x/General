@@ -22,7 +22,7 @@
     </div>
 
     <div class="info-section">
-        <div><strong>Name:</strong> __________________________ [cite: 3]</div>
+        <div><strong>Name:</strong> <input type="text"> </div>
         <div><strong>Grade:</strong> 7th Grade [cite: 4]</div>
     </div>
 
