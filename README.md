@@ -22,7 +22,7 @@
     </div>
 
     <div class="info-section">
-        <div><strong>Name:</strong> <input type="text"style="border: none; border-bottom: 1px solid #000;"> </div>
+        <div><strong>Name:</strong> <input type="text"style="border: none; border-bottom: 1px solid #000; outline: none; width: 250px"> </div>
         <div><strong>Grade:</strong> 7th Grade </div>
     </div>
 
