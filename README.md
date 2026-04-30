@@ -17,8 +17,8 @@
 <body>
 
     <div class="header">
-        <h1>Second Semester / Second Exam [cite: 1]</h1>
-        <h2>Dayr Abi Saeed Primary School [cite: 2]</h2>
+        <h1>Second Semester / Second Exam [--cite: 1--]</h1>
+        <h2>Dayr Abi Saeed Primary School [--cite: 2--]</h2>
     </div>
 
     <div class="info-section">
