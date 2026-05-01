@@ -57,7 +57,6 @@
             <p><strong>Sami:</strong> You also don't get long queues for the tills and lots of impolite customers! </p>
             <p><strong>Alex:</strong> But if we buy everything online, shops will close. </p>
         <div class="question-box">
-    <h3>Q1. Read the following text then answer the questions below: (8 Marks)</h3>
     
     <ol>
         <li>
