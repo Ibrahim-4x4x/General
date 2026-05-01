@@ -71,14 +71,48 @@
     <hr>
 
     <div class="question-box">
-        <h3>Q3. Read and circle the correct verb form: (4 Marks) [cite: 29]</h3>
-        <ol>
-            <li>If I (<span class="circle-answer">pass </span>/ passed) the exam, I'll celebrate. </li>
-            <li>If Ghada needs to buy something, she always (<span class="circle-answer">looks </span>/ would look) for the best price. </li>
-            <li>If I (can / could) travel back in time, I'd go to Ancient Jordan. </li>
-            <li>What (will you say / would you say) if you met your favourite celebrity? </li>
-        </ol>
+    <h3>Q3. Choose the correct verb form: (4 Marks)</h3>
+    
+    <div style="margin-bottom: 15px;">
+        <span class="question-text">1. If I ________ the exam, I'll celebrate. [cite: 30]</span>
+        <label class="mcq-option">
+            <input type="radio" name="q1" value="pass"> pass
+        </label>
+        <label class="mcq-option">
+            <input type="radio" name="q1" value="passed"> passed
+        </label>
     </div>
+
+    <div style="margin-bottom: 15px;">
+        <span class="question-text">2. If Ghada needs to buy something, she always ________ for the best price. [cite: 31]</span>
+        <label class="mcq-option">
+            <input type="radio" name="q2" value="looks"> looks
+        </label>
+        <label class="mcq-option">
+            <input type="radio" name="q2" value="would look"> would look
+        </label>
+    </div>
+
+    <div style="margin-bottom: 15px;">
+        <span class="question-text">3. If I ________ travel back in time, I'd go to Ancient Jordan. [cite: 32]</span>
+        <label class="mcq-option">
+            <input type="radio" name="q3" value="can"> can
+        </label>
+        <label class="mcq-option">
+            <input type="radio" name="q3" value="could"> could
+        </label>
+    </div>
+
+    <div style="margin-bottom: 15px;">
+        <span class="question-text">4. What ________ if you met your favourite celebrity? [cite: 33]</span>
+        <label class="mcq-option">
+            <input type="radio" name="q4" value="will-say"> will you say
+        </label>
+        <label class="mcq-option">
+            <input type="radio" name="q4" value="would-say"> would you say
+        </label>
+    </div>
+</div>
 
     <hr>
 
