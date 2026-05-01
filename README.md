@@ -10,6 +10,16 @@
         .question-box { margin-bottom: 30px; padding: 15px; border: 1px solid #ddd; border-radius: 8px; }
         .dialogue { background-color: #f9f9f9; padding: 15px; border-left: 5px solid #ccc; margin: 10px 0; }
         .word-bank { font-weight: bold; text-align: center; margin: 10px 0; }
+        .answer-line {
+    border: none;
+    border-bottom: 1px solid #000;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 5px 0;
+    font-family: inherit;
+    outline: none;
+    background-color: transparent;
         .footer { text-align: center; font-weight: bold; margin-top: 30px; }
         .circle-answer {
         border: 2px solid red; /* لون الدائرة */
@@ -46,15 +56,31 @@
             <p><strong>Alex:</strong> I suppose so. But I still prefer shops. I really love walking around bookshops. You don't get that online. </p>
             <p><strong>Sami:</strong> You also don't get long queues for the tills and lots of impolite customers! </p>
             <p><strong>Alex:</strong> But if we buy everything online, shops will close. </p>
-        </div>
-
-        <ol>
-            <li>Why does Sami prefer online shopping over going to real shops? </li>
-            <li>What does Sami do if the clothes he buys online don't fit him? </li>
-            <li>According to Sami, what are two negative things about real shops? </li>
-            <li>What does Alex think will happen if everyone only shops online? </li>
-        </ol>
-    </div>
+        <div class="question-box">
+    <h3>Q1. Read the following text then answer the questions below: (8 Marks)</h3>
+    
+    <ol>
+        <li>
+            Why does Sami prefer online shopping over going to real shops? 
+            <input type="text" class="answer-line" placeholder="Write your answer here...">
+        </li>
+        
+        <li>
+            What does Sami do if the clothes he buys online don't fit him? [cite: 16]
+            <input type="text" class="answer-line" placeholder="Write your answer here...">
+        </li>
+        
+        <li>
+            According to Sami, what are two negative things about real shops? [cite: 17]
+            <input type="text" class="answer-line" placeholder="Write your answer here...">
+        </li>
+        
+        <li>
+            What does Alex think will happen if everyone only shops online? [cite: 18]
+            <input type="text" class="answer-line" placeholder="Write your answer here...">
+        </li>
+    </ol>
+</div>
 
     <hr>
 
