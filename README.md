@@ -21,12 +21,7 @@
     outline: none;
     background-color: transparent;
         .footer { text-align: center; font-weight: bold; margin-top: 30px; }
-        .circle-answer {
-        border: 2px solid red; /* لون الدائرة */
-        border-radius: 50%;    /* لجعل الزوايا دائرية تماماً */
-        padding: 2px 8px;      /* مسافة بين الكلمة والدائرة */
-        display: inline-block;
-        hr { border: 0; border-top: 1px solid #eee; margin: 20px 0; }
+        
     </style>
 </head>
 <body>
