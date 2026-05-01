@@ -57,10 +57,10 @@
         <h3>Q2. Fill the blank to give the correct definition: (4 Marks) </h3>
         <p class="word-bank">(receipt / queue / customer / second-hand / credit card) </p>
         
-        <p>a) <input type="text" style="border: none; border-bottom: 1px solid #000; outline: none; width: 250px;">: a person who buys something in a shop. [cite: 21, 25]</p>
-        <p>b)<input type="text" style="border: none; border-bottom: 1px solid #000; outline: none; width: 250px;">: a piece of paper you get when you buy something. [cite: 22, 26]</p>
-        <p>c)<input type="text" style="border: none; border-bottom: 1px solid #000; outline: none; width: 250px;">: a line of people waiting for something. [cite: 23, 27]</p>
-        <p>d) <input type="text" style="border: none; border-bottom: 1px solid #000; outline: none; width: 250px;">: something that has already been used or worn by another person. [cite: 24, 28]</p>
+        <p>a) <input type="text" style="border: none; border-bottom: 1px solid #000; outline: none; width: 200px;">: a person who buys something in a shop. </p>
+        <p>b)<input type="text" style="border: none; border-bottom: 1px solid #000; outline: none; width: 200px;">: a piece of paper you get when you buy something. </p>
+        <p>c)<input type="text" style="border: none; border-bottom: 1px solid #000; outline: none; width: 200px;">: a line of people waiting for something. </p>
+        <p>d) <input type="text" style="border: none; border-bottom: 1px solid #000; outline: none; width: 200px;">: something that has already been used or worn by another person. </p>
     </div>
 
     <hr>
