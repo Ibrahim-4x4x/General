@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+<!--DOCTYPE html-->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>7th Grade Second Exam</title>
     <style>
-        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: auto; padding: 20px; }
+        .body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: auto; padding: 20px; }
         .header { text-align: center; border-bottom: 2px solid #000; margin-bottom: 20px; }
         .info-section { display: flex; justify-content: space-between; margin-bottom: 20px; }
         .question-box { margin-bottom: 30px; padding: 15px; border: 1px solid #ddd; border-radius: 8px; }
@@ -141,14 +141,14 @@
         <p class="word-bank">(save / spend / sell / buy / look at / look up / kidding / chance) </p>
         
         <ol>
-            <li>Shops <input type="text" style="border: none; border-bottom: 1px solid #000; outline: none; width: 200px;">things to customers. </li>
-            <li>You can <input type="text" style="border: none; border-bottom: 1px solid #000; outline: none; width: 200px;"> money for later. </li>
-            <li>The teacher told us to <input type="text" style="border: none; border-bottom: 1px solid #000; outline: none; width: 200px;"> the board. </li>
-            <li>I need to <input type="text" style="border: none; border-bottom: 1px solid #000; outline: none; width: 200px;">a word in the dictionary. </li>
-            <li>How much money do you <input type="text" style="border: none; border-bottom: 1px solid #000; outline: none; width: 200px;"> on sweets each week? </li>
-            <li>Customers<input type="text" style="border: none; border-bottom: 1px solid #000; outline: none; width: 200px;"> things from shops. </li>
-            <li>I'm only <input type="text" style="border: none; border-bottom: 1px solid #000; outline: none; width: 200px;">! I read your blog. </li>
-            <li>No <input type="text" style="border: none; border-bottom: 1px solid #000; outline: none; width: 200px;">! I don't like shopping.</li>
+            <li>Shops <input type="text" style="border: none; border-bottom: 1px solid #000; outline: none; width: 150px;">things to customers. </li>
+            <li>You can <input type="text" style="border: none; border-bottom: 1px solid #000; outline: none; width: 150px;"> money for later. </li>
+            <li>The teacher told us to <input type="text" style="border: none; border-bottom: 1px solid #000; outline: none; width: 150px;"> the board. </li>
+            <li>I need to <input type="text" style="border: none; border-bottom: 1px solid #000; outline: none; width:150px;">a word in the dictionary. </li>
+            <li>How much money do you <input type="text" style="border: none; border-bottom: 1px solid #000; outline: none; width: 150px;"> on sweets each week? </li>
+            <li>Customers<input type="text" style="border: none; border-bottom: 1px solid #000; outline: none; width150px;"> things from shops. </li>
+            <li>I'm only <input type="text" style="border: none; border-bottom: 1px solid #000; outline: none; width150px;">! I read your blog. </li>
+            <li>No <input type="text" style="border: none; border-bottom: 1px solid #000; outline: none; width150px;">! I don't like shopping.</li>
         </ol>
     </div>
 
