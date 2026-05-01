@@ -74,7 +74,7 @@
         <h3>Q3. Read and circle the correct verb form: (4 Marks) [cite: 29]</h3>
         <ol>
             <li>If I (<span class="circle-answer">pass </span>/ passed) the exam, I'll celebrate. </li>
-            <li>If Ghada needs to buy something, she always (<span class="circle answer">looks </span>/ would look) for the best price. </li>
+            <li>If Ghada needs to buy something, she always (<span class="circle-answer">looks </span>/ would look) for the best price. </li>
             <li>If I (can / could) travel back in time, I'd go to Ancient Jordan. </li>
             <li>What (will you say / would you say) if you met your favourite celebrity? </li>
         </ol>
