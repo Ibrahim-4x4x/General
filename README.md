@@ -146,9 +146,9 @@
             <li>The teacher told us to <input type="text" style="border: none; border-bottom: 1px solid #000; outline: none; width: 150px;"> the board. </li>
             <li>I need to <input type="text" style="border: none; border-bottom: 1px solid #000; outline: none; width:150px;">a word in the dictionary. </li>
             <li>How much money do you <input type="text" style="border: none; border-bottom: 1px solid #000; outline: none; width: 150px;"> on sweets each week? </li>
-            <li>Customers<input type="text" style="border: none; border-bottom: 1px solid #000; outline: none; width150px;"> things from shops. </li>
-            <li>I'm only <input type="text" style="border: none; border-bottom: 1px solid #000; outline: none; width150px;">! I read your blog. </li>
-            <li>No <input type="text" style="border: none; border-bottom: 1px solid #000; outline: none; width150px;">! I don't like shopping.</li>
+            <li>Customers<input type="text" style="border: none; border-bottom: 1px solid #000; outline: none; width:150px;"> things from shops. </li>
+            <li>I'm only <input type="text" style="border: none; border-bottom: 1px solid #000; outline: none; width:150px;">! I read your blog. </li>
+            <li>No <input type="text" style="border: none; border-bottom: 1px solid #000; outline: none; width:150px;">! I don't like shopping.</li>
         </ol>
     </div>
 
