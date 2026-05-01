@@ -11,6 +11,11 @@
         .dialogue { background-color: #f9f9f9; padding: 15px; border-left: 5px solid #ccc; margin: 10px 0; }
         .word-bank { font-weight: bold; text-align: center; margin: 10px 0; }
         .footer { text-align: center; font-weight: bold; margin-top: 30px; }
+        .circle-answer {
+        border: 2px solid red; /* لون الدائرة */
+        border-radius: 50%;    /* لجعل الزوايا دائرية تماماً */
+        padding: 2px 8px;      /* مسافة بين الكلمة والدائرة */
+        display: inline-block;
         hr { border: 0; border-top: 1px solid #eee; margin: 20px 0; }
     </style>
 </head>
@@ -68,10 +73,10 @@
     <div class="question-box">
         <h3>Q3. Read and circle the correct verb form: (4 Marks) [cite: 29]</h3>
         <ol>
-            <li>If I (pass / passed) the exam, I'll celebrate. [cite: 30]</li>
-            <li>If Ghada needs to buy something, she always (looks / would look) for the best price. [cite: 31]</li>
-            <li>If I (can / could) travel back in time, I'd go to Ancient Jordan. [cite: 32]</li>
-            <li>What (will you say / would you say) if you met your favourite celebrity? [cite: 33]</li>
+            <li>If I (<span class="circle-answer">pass </span>/ passed) the exam, I'll celebrate. </li>
+            <li>If Ghada needs to buy something, she always (<span class="circle answer">looks </span>/ would look) for the best price. </li>
+            <li>If I (can / could) travel back in time, I'd go to Ancient Jordan. </li>
+            <li>What (will you say / would you say) if you met your favourite celebrity? </li>
         </ol>
     </div>
 
