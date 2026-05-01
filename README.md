@@ -29,38 +29,38 @@
     <hr>
 
     <div class="question-box">
-        <h3>Q1. Read the following text then answer the questions below: (8 Marks) [cite: 5]</h3>
+        <h3>Q1. Read the following text then answer the questions below: (8 Marks) </h3>
         
         <div class="dialogue">
-            <p><strong>Alex:</strong> Hey, Sami! Do you want to come shopping with me? [cite: 6]</p>
-            <p><strong>Sami:</strong> No chance! I don't like shopping. [cite: 7]</p>
-            <p><strong>Alex:</strong> I'm only kidding! I read your blog. But why don't you like shopping? [cite: 8]</p>
-            <p><strong>Sami:</strong> It's just such a waste of time. If I need something, I ask my parents to buy it online. [cite: 9]</p>
-            <p><strong>Alex:</strong> But what about clothes and shoes? What do you do if they aren't big enough? [cite: 10]</p>
-            <p><strong>Sami:</strong> You can still try things on. If something isn't big enough, you send it back. [cite: 11]</p>
-            <p><strong>Alex:</strong> I suppose so. But I still prefer shops. I really love walking around bookshops. You don't get that online. [cite: 12]</p>
-            <p><strong>Sami:</strong> You also don't get long queues for the tills and lots of impolite customers! [cite: 13]</p>
-            <p><strong>Alex:</strong> But if we buy everything online, shops will close. [cite: 14]</p>
+            <p><strong>Alex:</strong> Hey, Sami! Do you want to come shopping with me? </p>
+            <p><strong>Sami:</strong> No chance! I don't like shopping. </p>
+            <p><strong>Alex:</strong> I'm only kidding! I read your blog. But why don't you like shopping? </p>
+            <p><strong>Sami:</strong> It's just such a waste of time. If I need something, I ask my parents to buy it online. </p>
+            <p><strong>Alex:</strong> But what about clothes and shoes? What do you do if they aren't big enough? </p>
+            <p><strong>Sami:</strong> You can still try things on. If something isn't big enough, you send it back. </p>
+            <p><strong>Alex:</strong> I suppose so. But I still prefer shops. I really love walking around bookshops. You don't get that online. </p>
+            <p><strong>Sami:</strong> You also don't get long queues for the tills and lots of impolite customers! </p>
+            <p><strong>Alex:</strong> But if we buy everything online, shops will close. </p>
         </div>
 
         <ol>
-            <li>Why does Sami prefer online shopping over going to real shops? [cite: 15]</li>
-            <li>What does Sami do if the clothes he buys online don't fit him? [cite: 16]</li>
-            <li>According to Sami, what are two negative things about real shops? [cite: 17]</li>
-            <li>What does Alex think will happen if everyone only shops online? [cite: 18]</li>
+            <li>Why does Sami prefer online shopping over going to real shops? </li>
+            <li>What does Sami do if the clothes he buys online don't fit him? </li>
+            <li>According to Sami, what are two negative things about real shops? </li>
+            <li>What does Alex think will happen if everyone only shops online? </li>
         </ol>
     </div>
 
     <hr>
 
     <div class="question-box">
-        <h3>Q2. Fill the blank to give the correct definition: (4 Marks) [cite: 19]</h3>
-        <p class="word-bank">(receipt / queue / customer / second-hand / credit card) [cite: 20]</p>
+        <h3>Q2. Fill the blank to give the correct definition: (4 Marks) </h3>
+        <p class="word-bank">(receipt / queue / customer / second-hand / credit card) </p>
         
-        <p>a) ________________: a person who buys something in a shop. [cite: 21, 25]</p>
-        <p>b) ________________: a piece of paper you get when you buy something. [cite: 22, 26]</p>
-        <p>c) ________________: a line of people waiting for something. [cite: 23, 27]</p>
-        <p>d) ________________: something that has already been used or worn by another person. [cite: 24, 28]</p>
+        <p>a) <input type="text" style="border: none; border-bottom: 1px solid #000; outline: none; width: 250px;">: a person who buys something in a shop. [cite: 21, 25]</p>
+        <p>b)<input type="text" style="border: none; border-bottom: 1px solid #000; outline: none; width: 250px;">: a piece of paper you get when you buy something. [cite: 22, 26]</p>
+        <p>c)<input type="text" style="border: none; border-bottom: 1px solid #000; outline: none; width: 250px;">: a line of people waiting for something. [cite: 23, 27]</p>
+        <p>d) <input type="text" style="border: none; border-bottom: 1px solid #000; outline: none; width: 250px;">: something that has already been used or worn by another person. [cite: 24, 28]</p>
     </div>
 
     <hr>
