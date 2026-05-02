@@ -21,7 +21,30 @@
     outline: none;
     background-color: transparent;
         .footer { text-align: center; font-weight: bold; margin-top: 30px; }
-        
+.save-button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.save-button:hover {
+    background-color: #218838;
+}
+
+@media print {
+    .save-button {
+        display: none;
+    }
+    body {
+        padding: 0;
+        margin: 0;
+    }
+}
     </style>
 </head>
 <body>
@@ -30,7 +53,9 @@
         <h1>Second Semester / Second Exam </h1>
         <h2>Dayr Abi Saeed Primary School </h2>
     </div>
-
+<div style="text-align: center;">
+    <button class="save-button" onclick="window.print()">Save Exam as PDF / Print</button>
+</div>
     <div class="info-section">
         <div><strong>Name:</strong> <input type="text" style="border: none; border-bottom: 1px solid #000; outline: none; width: 250px;"> </div>
         <div><strong>Grade:</strong> 7th Grade </div>
