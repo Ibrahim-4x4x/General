@@ -1,185 +1,96 @@
-<!--DOCTYPE html-->
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>7th Grade Second Exam</title>
+    <title>7th Grade Exam - Automated</title>
     <style>
-        .body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: auto; padding: 20px; }
-        .header { text-align: center; border-bottom: 2px solid #000; margin-bottom: 20px; }
-        .info-section { display: flex; justify-content: space-between; margin-bottom: 20px; }
-        .question-box { margin-bottom: 30px; padding: 15px; border: 1px solid #ddd; border-radius: 8px; }
-        .dialogue { background-color: #f9f9f9; padding: 15px; border-left: 5px solid #ccc; margin: 10px 0; }
-        .word-bank { font-weight: bold; text-align: center; margin: 10px 0; }
-        .answer-line {
-    border: none;
-    border-bottom: 1px solid #000;
-    width: 100%;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    padding: 5px 0;
-    font-family: inherit;
-    outline: none;
-    background-color: transparent;
-        .footer { text-align: center; font-weight: bold; margin-top: 30px; }
-.save-button {
-    background-color: #28a745;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-bottom: 20px;
-}
-
-.save-button:hover {
-    background-color: #218838;
-}
-
-@media print {
-    .save-button {
-        display: none;
-    }
-    body {
-        padding: 0;
-        margin: 0;
-    }
-}
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; max-width: 800px; margin: auto; padding: 20px; background-color: #f4f4f9; }
+        .exam-container { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        h1, h2 { text-align: center; color: #333; }
+        .question-box { margin-bottom: 25px; padding: 15px; border: 1px solid #eee; border-radius: 8px; }
+        .answer-line { border: none; border-bottom: 1px dashed #000; width: 100%; outline: none; margin: 10px 0; }
+        .mcq-option { display: block; margin: 5px 0; cursor: pointer; }
+        .submit-btn { background-color: #25d366; color: white; padding: 15px 30px; border: none; border-radius: 5px; font-size: 18px; cursor: pointer; width: 100%; font-weight: bold; }
+        .submit-btn:hover { background-color: #128c7e; }
+        .result-box { margin-top: 20px; font-weight: bold; color: #d9534f; text-align: center; display: none; }
     </style>
 </head>
 <body>
 
-    <div class="header">
-        <h1>Second Semester / Second Exam </h1>
-        <h2>Dayr Abi Saeed Primary School </h2>
-    </div>
-<div style="text-align: center;">
-    <button class="save-button" onclick="window.print()">Save Exam as PDF / Print</button>
-</div>
-    <div class="info-section">
-        <div><strong>Name:</strong> <input type="text" style="border: none; border-bottom: 1px solid #000; outline: none; width: 250px;"> </div>
-        <div><strong>Grade:</strong> 7th Grade </div>
+<div class="exam-container">
+    <h2>Dayr Abi Saeed Primary School</h2> <h1>Second Semester / Second Exam</h1> <p><strong>Grade:</strong> 7th Grade</p> <div>
+        <strong>Student Name:</strong> 
+        <input type="text" id="studentName" class="answer-line" style="width: 250px;">
     </div>
 
     <hr>
 
     <div class="question-box">
-        <h3>Q1. Read the following text then answer the questions below: (8 Marks) </h3>
-        
-        <div class="dialogue">
-            <p><strong>Alex:</strong> Hey, Sami! Do you want to come shopping with me? </p>
-            <p><strong>Sami:</strong> No chance! I don't like shopping. </p>
-            <p><strong>Alex:</strong> I'm only kidding! I read your blog. But why don't you like shopping? </p>
-            <p><strong>Sami:</strong> It's just such a waste of time. If I need something, I ask my parents to buy it online. </p>
-            <p><strong>Alex:</strong> But what about clothes and shoes? What do you do if they aren't big enough? </p>
-            <p><strong>Sami:</strong> You can still try things on. If something isn't big enough, you send it back. </p>
-            <p><strong>Alex:</strong> I suppose so. But I still prefer shops. I really love walking around bookshops. You don't get that online. </p>
-            <p><strong>Sami:</strong> You also don't get long queues for the tills and lots of impolite customers! </p>
-            <p><strong>Alex:</strong> But if we buy everything online, shops will close. </p>
-        <div class="question-box">
-    
-    <ol>
-        <li>
-            Why does Sami prefer online shopping over going to real shops? 
-            <input type="text" class="answer-line" placeholder="Write your answer here...">
-        </li>
-        
-        <li>
-            What does Sami do if the clothes he buys online don't fit him? [cite: 16]
-            <input type="text" class="answer-line" placeholder="Write your answer here...">
-        </li>
-        
-        <li>
-            According to Sami, what are two negative things about real shops? [cite: 17]
-            <input type="text" class="answer-line" placeholder="Write your answer here...">
-        </li>
-        
-        <li>
-            What does Alex think will happen if everyone only shops online? [cite: 18]
-            <input type="text" class="answer-line" placeholder="Write your answer here...">
-        </li>
-    </ol>
-</div>
-
-    <hr>
-
-    <div class="question-box">
-        <h3>Q2. Fill the blank to give the correct definition: (4 Marks) </h3>
-        <p class="word-bank">(receipt / queue / customer / second-hand / credit card) </p>
-        
-        <p>a) <input type="text" style="border: none; border-bottom: 1px solid #000; outline: none; width: 200px;">: a person who buys something in a shop. </p>
-        <p>b)<input type="text" style="border: none; border-bottom: 1px solid #000; outline: none; width: 200px;">: a piece of paper you get when you buy something. </p>
-        <p>c)<input type="text" style="border: none; border-bottom: 1px solid #000; outline: none; width: 200px;">: a line of people waiting for something. </p>
-        <p>d) <input type="text" style="border: none; border-bottom: 1px solid #000; outline: none; width: 200px;">: something that has already been used or worn by another person. </p>
-    </div>
-
-    <hr>
-
-    <div class="question-box">
-    <h3>Q3. Choose the correct verb form: (4 Marks)</h3>
-    
-    <div style="margin-bottom: 15px;">
-        <span class="question-text">1. If I ________ the exam, I'll celebrate. </span>
-        <label class="mcq-option">
-            <input type="radio" name="q1" value="pass"> pass
-        </label>
-        <label class="mcq-option">
-            <input type="radio" name="q1" value="passed"> passed
-        </label>
-    </div>
-
-    <div style="margin-bottom: 15px;">
-        <span class="question-text">2. If Ghada needs to buy something, she always ________ for the best price. </span>
-        <label class="mcq-option">
-            <input type="radio" name="q2" value="looks"> looks
-        </label>
-        <label class="mcq-option">
-            <input type="radio" name="q2" value="would look"> would look
-        </label>
-    </div>
-
-    <div style="margin-bottom: 15px;">
-        <span class="question-text">3. If I ________ travel back in time, I'd go to Ancient Jordan. </span>
-        <label class="mcq-option">
-            <input type="radio" name="q3" value="can"> can
-        </label>
-        <label class="mcq-option">
-            <input type="radio" name="q3" value="could"> could
-        </label>
-    </div>
-
-    <div style="margin-bottom: 15px;">
-        <span class="question-text">4. What ________ if you met your favourite celebrity?</span>
-        <label class="mcq-option">
-            <input type="radio" name="q4" value="will-say"> will you say
-        </label>
-        <label class="mcq-option">
-            <input type="radio" name="q4" value="would-say"> would you say
-        </label>
-    </div>
-</div>
-
-    <hr>
-
-    <div class="question-box">
-        <h3>Q4. Complete the sentences with the correct words: (4 Marks) </h3>
-        <p class="word-bank">(save / spend / sell / buy / look at / look up / kidding / chance) </p>
-        
+        <h3>Q1. Read the text then answer: (8 Marks)</h3> <p><em>(Dialogue between Alex and Sami regarding online shopping)</em></p>
         <ol>
-            <li>Shops <input type="text" style="border: none; border-bottom: 1px solid #000; outline: none; width: 150px;">things to customers. </li>
-            <li>You can <input type="text" style="border: none; border-bottom: 1px solid #000; outline: none; width: 150px;"> money for later. </li>
-            <li>The teacher told us to <input type="text" style="border: none; border-bottom: 1px solid #000; outline: none; width: 150px;"> the board. </li>
-            <li>I need to <input type="text" style="border: none; border-bottom: 1px solid #000; outline: none; width:150px;">a word in the dictionary. </li>
-            <li>How much money do you <input type="text" style="border: none; border-bottom: 1px solid #000; outline: none; width: 150px;"> on sweets each week? </li>
-            <li>Customers<input type="text" style="border: none; border-bottom: 1px solid #000; outline: none; width:150px;"> things from shops. </li>
-            <li>I'm only <input type="text" style="border: none; border-bottom: 1px solid #000; outline: none; width:150px;">! I read your blog. </li>
-            <li>No <input type="text" style="border: none; border-bottom: 1px solid #000; outline: none; width:150px;">! I don't like shopping.</li>
-        </ol>
+            <li>Why does Sami prefer online shopping? <input type="text" id="q1_1" class="answer-line"></li> <li>What if clothes don't fit? <input type="text" id="q1_2" class="answer-line"></li> <li>Two negative things about real shops? <input type="text" id="q1_3" class="answer-line"></li> <li>What happens if everyone shops online? <input type="text" id="q1_4" class="answer-line"></li> </ol>
     </div>
 
-    <div class="footer">
-        Good Luck!
+    <div class="question-box">
+        <h3>Q2. Definitions: (4 Marks)</h3> <p>(receipt / queue / customer / second-hand)</p> a) <input type="text" id="q2_a" placeholder="Answer here...">: a person who buys something. <br>
+        b) <input type="text" id="q2_b" placeholder="Answer here...">: a piece of paper you get. <br>
+        c) <input type="text" id="q2_c" placeholder="Answer here...">: a line of people waiting. <br>
+        d) <input type="text" id="q2_d" placeholder="Answer here...">: something used or worn. </div>
+
+    <div class="question-box">
+        <h3>Q3. Correct Verb Form: (4 Marks)</h3> 1. If I (pass/passed) the exam: <br> <label class="mcq-option"><input type="radio" name="q3_1" value="pass"> pass</label>
+        <label class="mcq-option"><input type="radio" name="q3_1" value="passed"> passed</label>
+        
+        2. Ghada (looks/would look): <br> <label class="mcq-option"><input type="radio" name="q3_2" value="looks"> looks</label>
+        <label class="mcq-option"><input type="radio" name="q3_2" value="would look"> would look</label>
     </div>
 
-<!--body-->
-<!--html-->
+    <div class="question-box">
+        <h3>Q4. Vocabulary: (4 Marks)</h3> 1. Shops <input type="text" id="q4_1" style="width: 80px;"> things to customers. <br>
+        2. You can <input type="text" id="q4_2" style="width: 80px;"> money for later. <br>
+        3. The teacher told us to <input type="text" id="q4_3" style="width: 80px;"> the board. <br>
+        4. I'm only <input type="text" id="q4_4" style="width: 80px;">! I read your blog. </div>
+
+    <button class="submit-btn" onclick="submitExam()">Submit & Send to Teacher</button>
+    
+    <div id="result" class="result-box"></div>
+</div>
+
+<script>
+function submitExam() {
+    let score = 0;
+    let name = document.getElementById('studentName').value;
+    if(!name) { alert("Please enter your name!"); return; }
+
+    // Q2 Logic [cite: 25, 26, 27, 28]
+    if(document.getElementById('q2_a').value.toLowerCase().trim() === 'customer') score++;
+    if(document.getElementById('q2_b').value.toLowerCase().trim() === 'receipt') score++;
+    if(document.getElementById('q2_c').value.toLowerCase().trim() === 'queue') score++;
+    if(document.getElementById('q2_d').value.toLowerCase().trim() === 'second-hand') score++;
+
+    // Q3 Logic 
+    let q3_1 = document.querySelector('input[name="q3_1"]:checked')?.value;
+    let q3_2 = document.querySelector('input[name="q3_2"]:checked')?.value;
+    if(q3_1 === 'pass') score++;
+    if(q3_2 === 'looks') score++;
+
+    // Q4 Logic [cite: 36, 37, 38, 42]
+    if(document.getElementById('q4_1').value.toLowerCase().trim() === 'sell') score++;
+    if(document.getElementById('q4_2').value.toLowerCase().trim() === 'save') score++;
+    if(document.getElementById('q4_3').value.toLowerCase().trim() === 'look at') score++;
+    if(document.getElementById('q4_4').value.toLowerCase().trim() === 'kidding') score++;
+
+    let totalPossible = 10; // (Q2, Q3, Q4 partial for demo)
+    let message = `Exam Result for: ${name}%0AScore: ${score}/${totalPossible}%0A(Note: Q1 needs manual grading)`;
+    
+    // إرسال عبر واتساب (استبدل الرقم بالرقم الفعلي للمعلم)
+    let teacherPhone = "962776051524"; // اكتب الرقم هنا مع مقدمة الدولة
+    window.open(`https://wa.me/${teacherPhone}?text=${message}`, '_blank');
+
+    document.getElementById('result').style.display = 'block';
+    document.getElementById('result').innerHTML = `Your score: ${score}/${totalPossible} (Sent to Teacher)`;
+}
+</script>
+
+</body>
+</html>
