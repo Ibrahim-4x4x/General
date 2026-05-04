@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!--DOCTYPE html-->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -144,9 +144,6 @@
                 1. Shops <input type="text" id="q4_1" style="width: 100px; border:none; border-bottom:1px solid #000; outline:none;"> things to customers.<br>
                 2. You can <input type="text" id="q4_2" style="width: 100px; border:none; border-bottom:1px solid #000; outline:none;"> money for later.
             </div>
-
-            <button class="btn btn-submit no-print" onclick="submitExam()">Submit Exam | تسليم الامتحان</button>
-            <div id="result-display" style="text-align:center; font-weight:bold; margin-top:20px; color: green; display:none;"></div>
             
             <div style="text-align: center; font-weight: bold; margin-top: 30px;">Good Luck!</div>
         </div>
@@ -154,7 +151,7 @@
 
     <script>
     // كلمة المرور التي يحددها المعلم
-    const TEACHER_SECRET = "1234"; 
+    const TEACHER_SECRET = "0101"; 
 
     let violationCount = 0;
     const maxAllowed = 2;
