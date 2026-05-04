@@ -72,7 +72,7 @@
 <body>
 <div id="lock-screen">
     <h1>⚠️ تم قفل الامتحان!</h1>
-    <p style="font-size:20px; color:black;">مدرسة دير أبي سعيد الأساسية [cite: 2]</p>
+    <p style="font-size:20px; color:black;">مدرسة دير أبي سعيد الأساسية </p>
     <p>لقد تجاوزت المحاولات المسموحة لمغادرة الصفحة.</p>
     
     <div style="margin-top: 30px; border: 2px solid #ccc; display: inline-block; padding: 20px; border-radius: 10px;">
@@ -97,7 +97,7 @@
             <h2>Dayr Abi Saeed Primary School </h2>
             <div style="display: flex; justify-content: space-between; margin-top: 10px; padding: 10px;">
                 <div><strong>Name:</strong> <input type="text" id="studentName" placeholder="Type your name..." style="border:none; border-bottom:1px solid #000; width:250px; outline:none;"></div>
-                <div><strong>Grade:</strong> 7th Grade [cite: 4]</div>
+                <div><strong>Grade:</strong> 7th Grade</div>
             </div>
         </div>
 
@@ -105,37 +105,37 @@
             <h3>Q1. Read the following text then answer the questions below: (8 Marks)</h3>
             <div class="dialogue">
                 Alex: Hey, Sami! Do you want to come shopping with me?<br>
-                Sami: No chance! I don't like shopping... (etc.) [cite: 6, 7]
+                Sami: No chance! I don't like shopping... (etc.)
             </div>
-            <p>1. Why does Sami prefer online shopping over going to real shops? [cite: 15]</p>
+            <p>1. Why does Sami prefer online shopping over going to real shops? </p>
             <input type="text" id="q1_1" class="answer-line">
-            <p>2. What does Sami do if the clothes he buys online don't fit him? [cite: 16]</p>
+            <p>2. What does Sami do if the clothes he buys online don't fit him? </p>
             <input type="text" id="q1_2" class="answer-line">
         </div>
 
         <div class="question-box">
             <h3>Q2. Fill the blank with the correct word: (4 Marks)</h3>
             <p style="text-align: center;">(receipt / queue / customer / second-hand) [cite: 20]</p>
-            a) <input type="text" id="q2_a" style="width: 150px; border:none; border-bottom:1px solid #000; outline:none;"> : a person who buys something in a shop. [cite: 25]<br>
-            b) <input type="text" id="q2_b" style="width: 150px; border:none; border-bottom:1px solid #000; outline:none;"> : a piece of paper you get when you buy something. [cite: 26]<br>
-            c) <input type="text" id="q2_c" style="width: 150px; border:none; border-bottom:1px solid #000; outline:none;"> : a line of people waiting for something. [cite: 27]<br>
-            d) <input type="text" id="q2_d" style="width: 150px; border:none; border-bottom:1px solid #000; outline:none;"> : something that has already been used. [cite: 28]
+            a) <input type="text" id="q2_a" style="width: 150px; border:none; border-bottom:1px solid #000; outline:none;"> : a person who buys something in a shop. <br>
+            b) <input type="text" id="q2_b" style="width: 150px; border:none; border-bottom:1px solid #000; outline:none;"> : a piece of paper you get when you buy something. <br>
+            c) <input type="text" id="q2_c" style="width: 150px; border:none; border-bottom:1px solid #000; outline:none;"> : a line of people waiting for something. <br>
+            d) <input type="text" id="q2_d" style="width: 150px; border:none; border-bottom:1px solid #000; outline:none;"> : something that has already been used. 
         </div>
 
         <div class="question-box">
             <h3>Q3. Choose the correct verb form: (4 Marks)</h3>
             <p>1. If I ( <input type="radio" name="q3_1" value="pass"> pass / <input type="radio" name="q3_1" value="passed"> passed ) the exam, I'll celebrate. [cite: 30]</p>
-            <p>2. If Ghada needs to buy something, she always ( <input type="radio" name="q3_2" value="looks"> looks / <input type="radio" name="q3_2" value="would look"> would look ) for the best price. [cite: 31]</p>
+            <p>2. If Ghada needs to buy something, she always ( <input type="radio" name="q3_2" value="looks"> looks / <input type="radio" name="q3_2" value="would look"> would look ) for the best price. </p>
         </div>
 
         <div class="question-box">
             <h3>Q4. Complete the sentences: (4 Marks)</h3>
-            1. Shops <input type="text" id="q4_1" style="width: 100px; border:none; border-bottom:1px solid #000; outline:none;"> things to customers. [cite: 36]<br>
-            2. You can <input type="text" id="q4_2" style="width: 100px; border:none; border-bottom:1px solid #000; outline:none;"> money for later. [cite: 37]
+            1. Shops <input type="text" id="q4_1" style="width: 100px; border:none; border-bottom:1px solid #000; outline:none;"> things to customers. <br>
+            2. You can <input type="text" id="q4_2" style="width: 100px; border:none; border-bottom:1px solid #000; outline:none;"> money for later. 
         </div>
         
         <button class="btn btn-submit no-print" onclick="submitExam()">إرسال النتيجة للمعلم عبر الإيميل</button>
-        <div style="text-align: center; font-weight: bold; margin-top: 30px;">Good Luck! [cite: 52]</div>
+        <div style="text-align: center; font-weight: bold; margin-top: 30px;">Good Luck! </div>
     </div>
 </div>
 
