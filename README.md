@@ -245,7 +245,6 @@ function unlockExam() {
         passwordField.value = ""; 
         passwordField.focus(); // وضع المؤشر في الخانة تلقائياً
     }
-}
 </script>
 </body>
 </html>
