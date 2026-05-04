@@ -140,5 +140,41 @@ function submitExam() {
         document.getElementById('start-btn').style.display = 'none';
     }
 </script>
+<script>
+    let violationCount = 0; // عداد المخالفات
+    const maxAllowed = 2;   // الحد الأقصى للمحاولات
+
+    function handleViolation() {
+        violationCount++;
+        
+        if (violationCount < maxAllowed) {
+            alert("تحذير: لا تغادر صفحة الامتحان! هذه هي المحاولة رقم " + violationCount + ". سيتم قفل الامتحان في المرة القادمة.");
+        } else {
+            lockExam();
+        }
+    }
+
+    function lockExam() {
+        // إخفاء محتوى الامتحان تماماً
+        document.getElementById('exam-content').style.display = 'none';
+        // إظهار شاشة القفل
+        document.getElementById('lock-screen').style.display = 'block';
+        
+        // إيقاف أي عمليات إضافية
+        console.log("Exam locked due to multiple tab switches.");
+    }
+
+    // كشف تبديل التبويبات (Tab Switching)
+    document.addEventListener("visibilitychange", function() {
+        if (document.hidden) {
+            handleViolation();
+        }
+    });
+
+    // كشف خروج الماوس من نافذة المتصفح (اختياري لزيادة الصرامة)
+    window.onblur = function() {
+        handleViolation();
+    };
+</script>
 </body>
 </html>
