@@ -77,12 +77,18 @@
     </style>
 </head>
 <body>
-
-    <div id="lock-screen">
-        <h1>⚠️ تم قفل الامتحان!</h1>
-        <p style="font-size: 20px; color: black;">لقد حاولت مغادرة الصفحة أكثر من مرتين. لا يمكن إكمال الامتحان.</p>
-        <div style="font-weight:bold; margin-top:20px;">مدرسة دير أبي سعيد الأساسية</div>
+<div id="lock-screen" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:white; color:red; text-align:center; padding-top:50px; z-index:9999;">
+    <h1>⚠️ تم قفل الامتحان!</h1>
+    <p style="font-size:20px; color:black;">مدرسة دير أبي سعيد الأساسية [cite: 2]</p>
+    <p>لقد تجاوزت المحاولات المسموحة لمغادرة الصفحة.</p>
+    
+    <div style="margin-top: 30px; border: 2px solid #ccc; display: inline-block; padding: 20px; border-radius: 10px;">
+        <p style="color: blue;">فتح الامتحان يحتاج رمز المعلم:</p>
+        <input type="password" id="teacher-password" placeholder="أدخل الرقم السري..." style="padding: 10px; font-size: 16px;">
+        <button class="btn btn-start" onclick="unlockExam()" style="width: auto; background-color: #28a745;">فتح القفل</button>
+        <p id="password-error" style="color: red; display: none;">الرمز غير صحيح!</p>
     </div>
+</div>
 
     <div id="main-container">
         <div id="start-area" style="text-align: center; padding: 50px;">
@@ -204,5 +210,78 @@
             }
         };
     </script>
+    <script>
+    // كلمة المرور التي يحددها المعلم
+    const TEACHER_SECRET = "1234"; 
+
+    let violationCount = 0;
+    const maxAllowed = 2;
+
+    // وظيفة التحقق عند تحميل الصفحة
+    window.onload = function() {
+        if (localStorage.getItem("exam_status") === "locked") {
+            showLockScreen();
+        }
+    };
+
+    function startExam() {
+        // التحقق إذا كان الطالب قد حاول الدخول سابقاً وتم قفله
+        if (localStorage.getItem("exam_status") === "locked") {
+            showLockScreen();
+            return;
+        }
+
+        let elem = document.documentElement;
+        if (elem.requestFullscreen) { elem.requestFullscreen(); }
+        
+        document.getElementById('start-area').style.display = 'none';
+        document.getElementById('exam-content').style.display = 'block';
+        
+        // حفظ أن الامتحان بدأ فعلياً لمنع التلاعب
+        localStorage.setItem("exam_status", "started");
+    }
+
+    function handleViolation() {
+        if (document.getElementById('exam-content').style.display === 'block') {
+            violationCount++;
+            if (violationCount < maxAllowed) {
+                alert("Warning! | تحذير: لا تخرج من الصفحة. المحاولة رقم: " + violationCount);
+            } else {
+                lockExam();
+            }
+        }
+    }
+
+    function lockExam() {
+        localStorage.setItem("exam_status", "locked"); // حفظ حالة القفل في المتصفح
+        showLockScreen();
+    }
+
+    function showLockScreen() {
+        document.getElementById('exam-content').style.display = 'none';
+        document.getElementById('start-area').style.display = 'none';
+        document.getElementById('lock-screen').style.display = 'block';
+        if (document.exitFullscreen) { document.exitFullscreen().catch(() => {}); }
+    }
+
+    // وظيفة المعلم لفتح القفل
+    function unlockExam() {
+        const input = document.getElementById('teacher-password').value;
+        if (input === TEACHER_SECRET) {
+            violationCount = 0;
+            localStorage.removeItem("exam_status"); // مسح القفل من الذاكرة
+            document.getElementById('lock-screen').style.display = 'none';
+            document.getElementById('start-area').style.display = 'block';
+            document.getElementById('password-error').style.display = 'none';
+            alert("تم فتح الامتحان بنجاح. يمكنك البدء مرة أخرى.");
+        } else {
+            document.getElementById('password-error').style.display = 'block';
+        }
+    }
+
+    document.addEventListener("visibilitychange", function() {
+        if (document.hidden) { handleViolation(); }
+    });
+</script>
 </body>
 </html>
