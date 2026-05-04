@@ -1,4 +1,4 @@
-<html lang="en">
+ <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -116,7 +116,6 @@
         <div class="question-box">
             <h3>Q2. Fill the blank with the correct word: (4 Marks)</h3>
             <p style="text-align: center;">(receipt / queue / customer / second-hand) [cite: 20]</p>
-            a) <input type="text" id="q2_a" style="width: 150px; border:none; border-bottom:1px solid #000; outline:none;"> : a person who buys something in a shop. [cite: 25]<br>
             a) <input type="text" id="q2_a" style="width: 150px; border:none; border-bottom:1px solid #000; outline:none;"> : a person who buys something in a shop. [cite: 25]<br>
             b) <input type="text" id="q2_b" style="width: 150px; border:none; border-bottom:1px solid #000; outline:none;"> : a piece of paper you get when you buy something. [cite: 26]<br>
             c) <input type="text" id="q2_c" style="width: 150px; border:none; border-bottom:1px solid #000; outline:none;"> : a line of people waiting for something. [cite: 27]<br>
