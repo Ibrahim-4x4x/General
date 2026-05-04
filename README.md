@@ -105,6 +105,34 @@ function submitExam() {
     document.getElementById('result').innerHTML = `Your score: ${score}/${totalPossible} (Sent to Teacher)`;
 }
 </script>
+<script>
+    document.addEventListener('contextmenu', event => event.preventDefault());
 
+    document.onkeydown = function(e) {
+        if (e.ctrlKey && 
+            (e.keyCode === 67 || // Ctrl+C
+             e.keyCode === 86 || // Ctrl+V
+             e.keyCode === 85 || // Ctrl+U (View Source)
+             e.keyCode === 73)) { // Ctrl+Shift+I (Inspect)
+            alert("Copying or Inspecting is disabled during the exam!");
+            return false;
+        }
+    };
+
+    document.addEventListener("visibilitychange", function() {
+        if (document.hidden) {
+            alert("Warning: You left the exam page! This incident will be reported to the teacher.");
+        }
+    });
+
+    function startExam() {
+        let elem = document.documentElement;
+        if (elem.requestFullscreen) {
+            elem.requestFullscreen();
+        }
+        document.getElementById('exam-content').style.display = 'block';
+        document.getElementById('start-btn').style.display = 'none';
+    }
+</script>
 </body>
 </html>
