@@ -85,16 +85,16 @@
 
 <div id="main-container">
     <div id="start-area" style="text-align: center; padding: 50px;">
-        <h2>Second Semester / Second Exam [cite: 1]</h2>
-        <h3>7th Grade [cite: 4]</h3>
+        <h2>Second Semester / Second Exam </h2>
+        <h3>7th Grade </h3>
         <p style="color: red; font-weight: bold;">تحذير: مغادرة الصفحة أو تبديل التبويب سيؤدي لقفل الامتحان تلقائياً.</p>
         <button class="btn btn-start" onclick="startExam()">Start Exam Now | ابدأ الامتحان</button>
     </div>
 
     <div id="exam-content">
         <div class="header">
-            <h1>Second Semester / Second Exam [cite: 1]</h1>
-            <h2>Dayr Abi Saeed Primary School [cite: 2]</h2>
+            <h1>Second Semester / Second Exam </h1>
+            <h2>Dayr Abi Saeed Primary School </h2>
             <div style="display: flex; justify-content: space-between; margin-top: 10px; padding: 10px;">
                 <div><strong>Name:</strong> <input type="text" id="studentName" placeholder="Type your name..." style="border:none; border-bottom:1px solid #000; width:250px; outline:none;"></div>
                 <div><strong>Grade:</strong> 7th Grade [cite: 4]</div>
@@ -116,6 +116,7 @@
         <div class="question-box">
             <h3>Q2. Fill the blank with the correct word: (4 Marks)</h3>
             <p style="text-align: center;">(receipt / queue / customer / second-hand) [cite: 20]</p>
+            a) <input type="text" id="q2_a" style="width: 150px; border:none; border-bottom:1px solid #000; outline:none;"> : a person who buys something in a shop. [cite: 25]<br>
             a) <input type="text" id="q2_a" style="width: 150px; border:none; border-bottom:1px solid #000; outline:none;"> : a person who buys something in a shop. [cite: 25]<br>
             b) <input type="text" id="q2_b" style="width: 150px; border:none; border-bottom:1px solid #000; outline:none;"> : a piece of paper you get when you buy something. [cite: 26]<br>
             c) <input type="text" id="q2_c" style="width: 150px; border:none; border-bottom:1px solid #000; outline:none;"> : a line of people waiting for something. [cite: 27]<br>
@@ -141,7 +142,7 @@
 
 <script>
     const TEACHER_SECRET = "0101"; 
-    const TEACHER_EMAIL = "teacher@example.com"; // استبدل هذا بإيميلك الحقيقي
+    const TEACHER_EMAIL = "9791008386@moej.edu.jo"; // استبدل هذا بإيميلك الحقيقي
 
     let violationCount = 0;
     const maxAllowed = 2;
