@@ -40,7 +40,7 @@ body {
     <hr>
 
     <div class="question-box">
-        <h3>Q1. Read the text then answer: (8 Marks)</h3> <p><em>(Dialogue between Alex and Sami regarding online shopping)</em></p>
+        <h3>Q1. Read the text then answer: (8 Marks)</h3> <p><em>(Dialogue between Ali and Sami regarding online shopping)</em></p>
         <ol>
             <li>Why does Sami prefer online shopping? <input type="text" id="q1_1" class="answer-line"></li> <li>What if clothes don't fit? <input type="text" id="q1_2" class="answer-line"></li> <li>Two negative things about real shops? <input type="text" id="q1_3" class="answer-line"></li> <li>What happens if everyone shops online? <input type="text" id="q1_4" class="answer-line"></li> </ol>
     </div>
