@@ -115,7 +115,7 @@
 
         <div class="question-box">
             <h3>Q2. Fill the blank with the correct word: (4 Marks)</h3>
-            <p style="text-align: center;">(receipt / queue / customer / second-hand) [cite: 20]</p>
+            <p style="text-align: center;">(receipt / queue / customer / second-hand) </p>
             a) <input type="text" id="q2_a" style="width: 150px; border:none; border-bottom:1px solid #000; outline:none;"> : a person who buys something in a shop. <br>
             b) <input type="text" id="q2_b" style="width: 150px; border:none; border-bottom:1px solid #000; outline:none;"> : a piece of paper you get when you buy something. <br>
             c) <input type="text" id="q2_c" style="width: 150px; border:none; border-bottom:1px solid #000; outline:none;"> : a line of people waiting for something. <br>
@@ -124,7 +124,7 @@
 
         <div class="question-box">
             <h3>Q3. Choose the correct verb form: (4 Marks)</h3>
-            <p>1. If I ( <input type="radio" name="q3_1" value="pass"> pass / <input type="radio" name="q3_1" value="passed"> passed ) the exam, I'll celebrate. [cite: 30]</p>
+            <p>1. If I ( <input type="radio" name="q3_1" value="pass"> pass / <input type="radio" name="q3_1" value="passed"> passed ) the exam, I'll celebrate. </p>
             <p>2. If Ghada needs to buy something, she always ( <input type="radio" name="q3_2" value="looks"> looks / <input type="radio" name="q3_2" value="would look"> would look ) for the best price. </p>
         </div>
 
