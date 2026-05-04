@@ -212,7 +212,8 @@
     }
 
     // 1. تعديل وظيفة إظهار شاشة القفل لمسح الخانة فور ظهورها
-     function showLockScreen() {
+// 1. تعديل وظيفة إظهار شاشة القفل لمسح الخانة فور ظهورها
+function showLockScreen() {
     document.getElementById('exam-content').style.display = 'none';
     document.getElementById('start-area').style.display = 'none';
     document.getElementById('lock-screen').style.display = 'block';
@@ -223,9 +224,8 @@
 
     if (document.exitFullscreen) { document.exitFullscreen().catch(() => {}); }
 }
-    }
 
-    // 2. تعديل وظيفة فتح القفل لمسح الخانة بعد المحاولة
+// 2. تعديل وظيفة فتح القفل لمسح الخانة بعد المحاولة
 function unlockExam() {
     const passwordField = document.getElementById('teacher-password');
     const input = passwordField.value;
@@ -245,6 +245,7 @@ function unlockExam() {
         passwordField.value = ""; 
         passwordField.focus(); // وضع المؤشر في الخانة تلقائياً
     }
+}
 </script>
 </body>
 </html>
