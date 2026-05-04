@@ -30,6 +30,12 @@ body {
     </style>
 </head>
 <body>
+<div id="lock-screen" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:white; color:red; text-align:center; padding-top:100px; z-index:9999;">
+    <h1>⚠️ تم قفل الامتحان!</h1>
+    <p style="font-size:20px; color:black;">لقد حاولت مغادرة صفحة الامتحان أكثر من مرتين.</p>
+    <p>تم تسجيل هذه المحاولة وإرسالها للمراقب.</p>
+    <div style="font-weight:bold; margin-top:20px;">مدرسة دير أبي سعيد الأساسية</div>
+</div>
 
 <div class="exam-container">
     <h2>Dayr Abi Saeed Primary School</h2> <h1>Second Semester / Second Exam</h1> <p><strong>Grade:</strong> 7th Grade</p> <div>
