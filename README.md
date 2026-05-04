@@ -153,64 +153,6 @@
     </div>
 
     <script>
-        let violationCount = 0;
-        const maxAllowed = 2;
-
-        // بدء الامتحان وتفعيل وضع ملء الشاشة
-        function startExam() {
-            let elem = document.documentElement;
-            if (elem.requestFullscreen) { elem.requestFullscreen(); }
-            else if (elem.webkitRequestFullscreen) { elem.webkitRequestFullscreen(); }
-
-            document.getElementById('start-area').style.display = 'none';
-            document.getElementById('exam-content').style.display = 'block';
-        }
-
-        // نظام الحماية من الغش ومغادرة الصفحة
-        document.addEventListener("visibilitychange", function() {
-            if (document.hidden && document.getElementById('exam-content').style.display === 'block') {
-                violationCount++;
-                if (violationCount < maxAllowed) {
-                    alert("Warning! | تحذير: لا تخرج من الصفحة. المحاولة رقم: " + violationCount);
-                } else {
-                    lockExam();
-                }
-            }
-        });
-
-        function lockExam() {
-            document.getElementById('exam-content').style.display = 'none';
-            document.getElementById('lock-screen').style.display = 'block';
-            if (document.exitFullscreen) { document.exitFullscreen(); }
-        }
-
-        // تسليم الامتحان وحساب العلامة
-        function submitExam() {
-            let score = 0;
-            let name = document.getElementById('studentName').value;
-            if (!name) { alert("Please enter your name!"); return; }
-
-            // منطق التصحيح التلقائي (أمثلة)
-            if(document.getElementById('q2_a').value.toLowerCase().trim() === 'customer') score++;
-            if(document.getElementById('q2_b').value.toLowerCase().trim() === 'receipt') score++;
-            
-            let q3_1 = document.querySelector('input[name="q3_1"]:checked')?.value;
-            if(q3_1 === 'pass') score++;
-
-            alert("Exam submitted successfully! Score: " + score);
-            document.getElementById('result-display').innerHTML = "Thank you " + name + ". Your auto-graded score is: " + score;
-            document.getElementById('result-display').style.display = 'block';
-        }
-
-        // منع النقر الأيمن واختصارات الكيبورد
-        document.addEventListener('contextmenu', event => event.preventDefault());
-        document.onkeydown = function(e) {
-            if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 73)) {
-                return false;
-            }
-        };
-    </script>
-    <script>
     // كلمة المرور التي يحددها المعلم
     const TEACHER_SECRET = "1234"; 
 
