@@ -211,30 +211,41 @@
         showLockScreen();
     }
 
-    function showLockScreen() {
-        document.getElementById('exam-content').style.display = 'none';
-        document.getElementById('start-area').style.display = 'none';
-        document.getElementById('lock-screen').style.display = 'block';
-        if (document.exitFullscreen) { document.exitFullscreen().catch(() => {}); }
+    // 1. تعديل وظيفة إظهار شاشة القفل لمسح الخانة فور ظهورها
+     function showLockScreen() {
+    document.getElementById('exam-content').style.display = 'none';
+    document.getElementById('start-area').style.display = 'none';
+    document.getElementById('lock-screen').style.display = 'block';
+    
+    // مسح خانة كلمة السر عند ظهور الشاشة
+    document.getElementById('teacher-password').value = ""; 
+    document.getElementById('password-error').style.display = 'none';
+
+    if (document.exitFullscreen) { document.exitFullscreen().catch(() => {}); }
+}
     }
 
-    function unlockExam() {
-        const input = document.getElementById('teacher-password').value;
-        if (input === TEACHER_SECRET) {
-            violationCount = 0;
-            localStorage.removeItem("exam_status");
-            document.getElementById('lock-screen').style.display = 'none';
-            document.getElementById('start-area').style.display = 'block';
-            document.getElementById('password-error').style.display = 'none';
-        } else {
-            document.getElementById('password-error').style.display = 'block';
-        }
-    }
+    // 2. تعديل وظيفة فتح القفل لمسح الخانة بعد المحاولة
+function unlockExam() {
+    const passwordField = document.getElementById('teacher-password');
+    const input = passwordField.value;
 
-    document.addEventListener("visibilitychange", function() {
-        if (document.hidden) { handleViolation(); }
-    });
-    document.addEventListener('contextmenu', event => event.preventDefault());
+    if (input === TEACHER_SECRET) {
+        violationCount = 0;
+        localStorage.removeItem("exam_status");
+        document.getElementById('lock-screen').style.display = 'none';
+        document.getElementById('start-area').style.display = 'block';
+        
+        // مسح الخانة بعد النجاح للاستعداد للمرة القادمة
+        passwordField.value = ""; 
+        document.getElementById('password-error').style.display = 'none';
+    } else {
+        // إظهار رسالة الخطأ ومسح الخانة فوراً لإعادة المحاولة
+        document.getElementById('password-error').style.display = 'block';
+        passwordField.value = ""; 
+        passwordField.focus(); // وضع المؤشر في الخانة تلقائياً
+    }
+}
 </script>
 </body>
 </html>
