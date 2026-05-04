@@ -215,6 +215,8 @@ function showLockScreen() {
         document.getElementById('exam-content').style.display = 'none';
         document.getElementById('start-area').style.display = 'none';
         document.getElementById('lock-screen').style.display = 'block';
+        document.getElementById('teacher-password').value = ""; 
+        document.getElementById('password-error').style.display = 'none';
         if (document.exitFullscreen) { document.exitFullscreen().catch(() => {}); }
     }
 
