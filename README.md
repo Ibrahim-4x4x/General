@@ -210,8 +210,6 @@
         localStorage.setItem("exam_status", "locked");
         showLockScreen();
     }
-
-    // 1. تعديل وظيفة إظهار شاشة القفل لمسح الخانة فور ظهورها
 // 1. تعديل وظيفة إظهار شاشة القفل لمسح الخانة فور ظهورها
 function showLockScreen() {
     document.getElementById('exam-content').style.display = 'none';
