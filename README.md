@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!--DOCTYPE html-->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -47,42 +47,44 @@
         <p>مدرسة دير أبي سعيد الأساسية</p>
     </div>
 
-    <div id="main-container">
-        <div id="start-area" style="text-align: center; padding: 50px;">
-            <h2>Second Exam - 7th Grade</h2>
-            <p>يرجى العلم أن مغادرة الصفحة ستؤدي لقفل الامتحان.</p>
-            <button class="btn btn-start" onclick="startExam()">Start Exam Now | ابدأ الامتحان</button>
-        </div>
-
-        <div id="exam-content">
-            <button class="btn btn-save no-print" onclick="window.print()">Save as PDF / Print</button>
-            
-            <div class="header">
-                <h1>Second Semester / Second Exam</h1>
-                <h2>Dayr Abi Saeed Primary School</h2>
-                <div style="display: flex; justify-content: space-between; margin-top: 10px;">
-                    <div><strong>Name:</strong> <input type="text" placeholder="Write name..." style="border:none; border-bottom:1px solid #000; width:200px; outline:none;"></div>
-                    <div><strong>Grade:</strong> 7th Grade</div>
-                </div>
-            </div>
-
-            <div class="question-box">
-                <h3>Q1. Answer the questions based on the dialogue:</h3>
-                <p>1. Why does Sami prefer online shopping?</p>
-                <input type="text" class="answer-line">
-                <p>2. What does Sami do if clothes don't fit?</p>
-                <input type="text" class="answer-line">
-            </div>
-
-            <div class="question-box">
-                <h3>Q3. Choose the correct verb:</h3>
-                <p>1. If I ( <input type="radio" name="q1"> pass / <input type="radio" name="q1"> passed ) the exam, I'll celebrate.</p>
-                <p>2. If I ( <input type="radio" name="q2"> could / <input type="radio" name="q2"> can ) travel back in time, I'd go to Ancient Jordan.</p>
-            </div>
-
-            <div style="text-align: center; font-weight: bold;">Good Luck!</div>
-        </div>
+   <div class="exam-container">
+    <h2>Dayr Abi Saeed Primary School</h2> <h1>Second Semester / Second Exam</h1> <p><strong>Grade:</strong> 7th Grade</p> <div>
+        <strong>Student Name:</strong> 
+        <input type="text" id="studentName" class="answer-line" style="width: 250px;">
     </div>
+
+    <hr>
+
+    <div class="question-box">
+        <h3>Q1. Read the text then answer: (8 Marks)</h3> <p><em>(Dialogue between Ali and Sami regarding online shopping)</em></p>
+        <ol>
+            <li>Why does Sami prefer online shopping? <input type="text" id="q1_1" class="answer-line"></li> <li>What if clothes don't fit? <input type="text" id="q1_2" class="answer-line"></li> <li>Two negative things about real shops? <input type="text" id="q1_3" class="answer-line"></li> <li>What happens if everyone shops online? <input type="text" id="q1_4" class="answer-line"></li> </ol>
+    </div>
+
+    <div class="question-box">
+        <h3>Q2. Definitions: (4 Marks)</h3> <p>(receipt / queue / customer / second-hand)</p> a) <input type="text" id="q2_a" placeholder="Answer here...">: a person who buys something. <br>
+        b) <input type="text" id="q2_b" placeholder="Answer here...">: a piece of paper you get. <br>
+        c) <input type="text" id="q2_c" placeholder="Answer here...">: a line of people waiting. <br>
+        d) <input type="text" id="q2_d" placeholder="Answer here...">: something used or worn. </div>
+
+    <div class="question-box">
+        <h3>Q3. Correct Verb Form: (4 Marks)</h3> 1. If I (pass/passed) the exam: <br> <label class="mcq-option"><input type="radio" name="q3_1" value="pass"> pass</label>
+        <label class="mcq-option"><input type="radio" name="q3_1" value="passed"> passed</label>
+        
+        2. Ghada (looks/would look): <br> <label class="mcq-option"><input type="radio" name="q3_2" value="looks"> looks</label>
+        <label class="mcq-option"><input type="radio" name="q3_2" value="would look"> would look</label>
+    </div>
+
+    <div class="question-box">
+        <h3>Q4. Vocabulary: (4 Marks)</h3> 1. Shops <input type="text" id="q4_1" style="width: 80px;"> things to customers. <br>
+        2. You can <input type="text" id="q4_2" style="width: 80px;"> money for later. <br>
+        3. The teacher told us to <input type="text" id="q4_3" style="width: 80px;"> the board. <br>
+        4. I'm only <input type="text" id="q4_4" style="width: 80px;">! I read your blog. </div>
+
+    <button class="submit-btn" onclick="submitExam()">Submit & Send to Teacher</button>
+    
+    <div id="result" class="result-box"></div>
+</div>
 
     <script>
         let violationCount = 0;
