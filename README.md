@@ -167,6 +167,7 @@
     const TEACHER_SECRET = "0101"; 
 
     function startExam() {
+        // Check if already locked before starting
         if (localStorage.getItem("unit7_status") === "locked") {
             showLockScreen();
             return;
@@ -197,6 +198,11 @@
         if (document.getElementById('ex2').value.toLowerCase().includes("not on")) score++;
 
         alert(`Great job, ${name}!\nYour Score: ${score} / ${totalPoints}`);
+        lockActivity(); // Use a shared lock function
+    }
+
+    // Function to handle the locking state
+    function lockActivity() {
         localStorage.setItem("unit7_status", "locked");
         showLockScreen();
     }
@@ -216,9 +222,21 @@
         }
     }
 
+    // --- SECURITY MONITORING ---
+
+    // 1. Detect if the user switches tabs or minimizes the window
     document.addEventListener("visibilitychange", function() {
         if (document.hidden && document.getElementById('exam-content').style.display === 'block') {
-            alert("Warning: Stay on the page to finish your activity!");
+            lockActivity();
+            alert("Activity Locked: You left the page during the exam.");
+        }
+    });
+
+    // 2. Detect if the window loses focus (e.g., clicking on another app or a popup)
+    window.addEventListener("blur", function() {
+        if (document.getElementById('exam-content').style.display === 'block') {
+            lockActivity();
+            alert("Activity Locked: Window lost focus.");
         }
     });
 </script>
