@@ -1,4 +1,4 @@
-<!--DOCTYPE html-->
+How <!--DOCTYPE html-->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -135,7 +135,7 @@
             <h3>2. Circle True (T) or False (F):</h3>
             <div class="true-false-row">
                 1. Dana has been doing an experiment for a week. 
-                <input type="radio" name="tf1" value="F"> T / <input type="radio" name="tf1" value="T"> F (Correct: False, she's doing it for a month)
+                <input type="radio" name="tf1" value="F"> T / <input type="radio" name="tf1" value="T"> F
             </div>
             <div class="true-false-row">
                 2. Dana gets on worse with her sister than with her friends. 
@@ -143,7 +143,7 @@
             </div>
             <div class="true-false-row">
                 3. Dana ruined her sister's favourite T-shirt. 
-                <input type="radio" name="tf3" value="F"> T / <input type="radio" name="tf3" value="F"> F
+                <input type="radio" name="tf3" value="F"> T / <input type="radio" name="tf3" value="T"> F
             </div>
         </div>
 
