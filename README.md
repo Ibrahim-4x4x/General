@@ -143,7 +143,7 @@
             </div>
             <div class="true-false-row">
                 3. Dana ruined her sister's favourite T-shirt. 
-                <input type="radio" name="tf3" value="T"> T / <input type="radio" name="tf3" value="F"> F
+                <input type="radio" name="tf3" value="F"> T / <input type="radio" name="tf3" value="F"> F
             </div>
         </div>
 
